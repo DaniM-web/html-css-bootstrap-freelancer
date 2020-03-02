@@ -31,7 +31,7 @@ text-decoration: none;
   color: #fff;
   padding: 100px 0;
 }
-img{
+.jumbotron img{
   margin-top: 60px;
   width:250px;
   height: auto;
@@ -49,8 +49,10 @@ img{
 }
 
 #portfolio{
+  padding: 30px 0;
   text-align: center;
   color: #2c3e50;
+  box-sizing: border-box;
 }
 .divider-line-blu{
 height: 3px;
@@ -63,4 +65,12 @@ margin-bottom: 11px;
 h2.bluetitle{
   font-size: 48px;
   font-weight: bold;
+}
+.itemlist img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.itemlist{
+  padding: 15px 0;
 }
