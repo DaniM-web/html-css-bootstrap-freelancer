@@ -2,19 +2,20 @@ body{
   font-family: 'Montserrat', sans-serif;
 
 }
-
+/* BARRA NAV CUSTOM */
 .navcustom{
   background-color: #2c3e50;
+  border: none;
   padding: 25px;
 }
-
+/* MENU  SX NAV */
 .navbar-left a{
 font-size: 30px;
 font-weight: bold;
 color: #fff;
 text-decoration: none;
 }
-
+    /* MENU DX NAV */
 .navbar-right a{
   font-size: 18px;
   font-weight: bold;
@@ -24,7 +25,7 @@ text-decoration: none;
 .navbar-right a:hover{
   color: #1ABC9C;
 }
-
+/* JUMBOTRON SECTION */
 .jumbotron{
   background-color: #1ABC9C;
   text-align: center;
@@ -40,31 +41,41 @@ text-decoration: none;
   font-size: 25px;
   margin: 10px;
 }
+/* LINEE DIVISORIE */
 .divider-line{
-  height: 5px;
+  height: 1px;
   width: 110px;
-  background-color: #fff;
+  /* background-color: #2c3e50; */
   display: inline-block;
   margin-bottom: 11px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  /* vertical-align: middle; */
 }
+
 .divider-line-div{
   margin-bottom: 15px;
 }
-
+/* SEZIONE PORTFOLIO */
 #portfolio{
   padding: 30px 0;
   text-align: center;
   color: #2c3e50;
   box-sizing: border-box;
 }
+
+/* LINEE DIVISORIE BLU */
 .divider-line-blu{
-height: 5px;
+height: 1px;
 width: 110px;
-background-color: #2c3e50;
+/* background-color: #2c3e50; */
 display: inline-block;
 margin-bottom: 11px;
+border: 2px solid #2c3e50;
+border-radius: 2px;
+/* vertical-align: middle; */
 }
-
+/* DEFINIZIONE TITOLI */
 h2.bluetitle{
   font-size: 48px;
   font-weight: bold;
@@ -81,9 +92,43 @@ h2.whitetitle{
   border-radius: 30px;
 }
 .itemlist{
-  padding: 15px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* LAYOVER SULLE CARDS */
+.rollhover{
+  position: absolute;
+  width: 100%;
+  top:0px;
+  left:0px;
+  right: 0px;
+  bottom:0px;
+  cursor: pointer;
 }
 
+.rollhover:hover{
+  background-color: rgba(26,188,156,.9);
+  background-size: cover;
+  border-radius: 30px;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  display: block;
+}
+  /*  CROCE BIANCA POSIZIONAMENTO E HOVER */
+.cross{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+}
+
+.rollhover:hover .cross{
+  display: block;
+}
+/* BOTTONE DOWNLOAD */
 a.dwnldlink{
   color: #fff;
   padding: 20px 30px;
@@ -100,8 +145,46 @@ a.dwnldlink:hover{
 .downloadbtn{
   margin-top: 30px;
 }
-
+/* SEZIONE CONTACTS CON FORM */
 #contacts{
-  width: 100%
-  padding: 30px 0;
+  width: 100%;
+  padding: 70px 0;
+}
+
+.contactme{
+  width: 60%;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+
+.form-group input{
+  height: 80px;
+  padding: 30px 0 50px;
+  border: 0;
+  border-bottom: 1px solid #E3E3E3;
+  box-shadow: none;
+  font-size: 30px;
+}
+
+.form-group input:focus{
+  box-shadow: none;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.lg-text input{
+  padding: 0 0 160px;
+  height: 200px;
+}
+.btn-send{
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  padding: 15px 30px;;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.btn-send:hover{
+  color: #fff;
+  background-color: #159a80;
+  border-color: #148f77;
 }
